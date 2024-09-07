@@ -1,0 +1,21 @@
+[package]
+name = "tln_mqtt"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "tln_mqtt"
+crate-type = ["cdylib"]
+
+[dependencies]
+anstream = "0.6.15"
+crossbeam-channel = "0.5.13"
+owo-colors = "4.1.0"
+regex = "1"
+rumqttc = "0.24.0"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+tracing = "0.1"
+tracing-subscriber = "0.3.0"
+
+common = { path = "../common" }
